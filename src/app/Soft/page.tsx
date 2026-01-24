@@ -31,47 +31,47 @@ export default function Page() {
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
 				{softwareArticles.map((article) => (
 					<motion.div
-							key={article.slug}
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.3 }}
-							whileHover={{ 
-								scale: 1.02,
-								rotate: [0, -1, 1, -1, 0],
-								transition: { 
-									duration: 0.5,
-									ease: "easeInOut"
-								}
-							}}
-							className='card overflow-hidden h-[150px]'
-						>
-						<Link href={`/blog/${article.slug}`} className='block h-full flex items-center p-3'>
-								{article.cover && (
-									<div className='w-[85px] h-[85px] overflow-hidden rounded-lg mr-3 ml-[-30px]'>
-										<Image
-											src={article.cover}
-											alt={article.title}
-											width={85}
-											height={85}
-											className='object-cover transition-transform duration-500'
-										/>
-									</div>
-								)}
-								<div className='flex-1 flex flex-col pt-[15px]'>
-									<h2 className='text-sm font-bold mb-1 transition-colors hover:text-brand line-clamp-1'>
-										{article.title}
-									</h2>
-									{article.summary && (
-										<p className='text-secondary text-xs line-clamp-2 mb-1'>
-											{article.summary}
-										</p>
-									)}
-									<div className='text-xs text-secondary text-right mt-[30px]'>
-																										{new Date(article.date).toLocaleDateString('zh-CN')}
-																									</div>
+						key={article.slug}
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.3 }}
+						whileHover={{ 
+							scale: 1.02,
+							rotate: [0, -1, 1, -1, 0],
+							transition: { 
+								duration: 0.5,
+								ease: "easeInOut"
+							}
+						}}
+						className='card overflow-hidden h-[150px]'
+					>
+					<Link href={`/blog/${article.slug}`} className='block h-full flex items-center p-3'>
+							{article.cover && (
+								<div className='w-[85px] h-[85px] overflow-hidden rounded-lg mr-3 ml-[-10px]'>
+									<Image
+										src={article.cover}
+										alt={article.title}
+										width={85}
+										height={85}
+										className='object-cover'
+									/>
 								</div>
-							</Link>
-					</motion.div>
+							)}
+							<div className='flex-1 flex flex-col pt-[15px]'>
+								<h2 className='text-sm font-bold mb-1 transition-colors hover:text-brand line-clamp-1'>
+									{article.title}
+								</h2>
+								{article.summary && (
+									<p className='text-secondary text-xs line-clamp-2 mb-1'>
+										{article.summary}
+									</p>
+								)}
+								<div className='text-xs text-secondary text-right mt-[30px]'>
+									{new Date(article.date).toLocaleDateString('zh-CN')}
+								</div>
+							</div>
+						</Link>
+				</motion.div>
 				))}
 			</div>
 
