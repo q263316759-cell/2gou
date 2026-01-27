@@ -16,7 +16,8 @@ const cloudStorageOptions = [
 	{ value: '夸克', label: '夸克网盘' },
 	{ value: '迅雷', label: '迅雷网盘' },
 	{ value: '豆包', label: '豆包网盘' },
-	{ value: 'GitHub', label: 'GitHub下载' }
+	{ value: 'GitHub', label: 'GitHub下载' },
+	{ value: '本地下载', label: '本地下载' }
 ]
 
 export function DownloadSection({ delay = 0 }: DownloadSectionProps) {
