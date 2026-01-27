@@ -1,5 +1,30 @@
 [
   {
+    "slug": "SunmmrClover",
+    "title": "夏色四叶草",
+    "tags": [
+      "SLG",
+      "ADV"
+    ],
+    "date": "2026-01-28T04:34",
+    "summary": "身负千万债务的你，在一间集团公司担任职员，时常被派遣到各处执行各种业务，\n但由于一些生理上的原因，你不断被投诉性骚扰，因此感到很郁闷……",
+    "cover": "/blogs/SunmmrClover/04c9513645b22f29.png",
+    "hidden": false,
+    "category": "游戏",
+    "downloadLinks": [
+      {
+        "name": "豆包网盘",
+        "url": "https://www.doubao.com/drive/s/328118bda1f2e087"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1tyiWSq7OJsSR6vRQeR6g-w?pwd=2gou"
+      }
+    ],
+    "passwordProtected": false,
+    "password": ""
+  },
+  {
     "slug": "splayer",
     "title": "SPlayer开源音乐播放器",
     "tags": [
