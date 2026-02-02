@@ -67,10 +67,8 @@
 	"currentHatIndex": 3,
 	"hatFlipped": false,
 	"enableChristmas": true,
-	"enablePasswordAccess": true,
-	"passwordAccessCategories": [
-		"Chara"
-	],
+	"enablePasswordAccess": false,
+	"passwordAccessCategories": [],
 	"passwordAccessPassword": "110110",
 	"beian": {
 		"text": "",
